@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body{
+    background-color: #4994df;
+    color: #333333;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 40px;
+    gap: 30px;
+}
+
+.blog-list {
+    width: 60%;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.blog-list table{
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.blog-list td{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.blog-list th {
+    background-color: #f1f3f5;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.blog-list tr:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.blog-form {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.blog-form form {
+    display: flex;
+    flex-direction: column;
+}
+.blog-form label {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Inputs */
+.blog-form input,
+.blog-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus {
+    border-color: #007bff;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus {
+    border-color: #007bff;
+}
+
+/* Textarea */
+.blog-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Button */
+.blog-form button {
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-form button:hover {
+    background-color: #0056c4;
+}
+
+/* -------- Tablet -------- */
+@media (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .blog-list,
+    .blog-form {
+        width: 100%;
+    }
+}

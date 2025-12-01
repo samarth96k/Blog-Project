@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="vlog-container">
+
+        <h1><%= vlog[0] %></h1>
+
+        <p class="meta">
+            Category: <%= vlog[1] %> |
+            Author: <%= vlog[2] %> |
+            Date: <%= vlog[4] %>
+        </p>
+
+        <hr>
+
+        <p class="content"><%= vlog[3] %></p>
+
+        <div class="vlog-actions">
+            <a href="/edit/<%= id %>" class="edit-btn">Edit</a>
+            <a href="/delete/<%= id %>" class="delete-btn" onclick="return confirm('Delete this blog?')">Delete</a>
+            <a href="/" class="back-btn">Back to Home</a>
+        </div>
+
+        </div>
+
+</body>
+</html>
